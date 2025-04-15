@@ -25,3 +25,10 @@ spring:
     repository:
       table-prefix: BATCH_  # Batch tabloları için prefix (isteğe bağlı)
       database-type: sqlserver
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
